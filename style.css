@@ -1,0 +1,81 @@
+/* ===== Reset básico ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Corpo ===== */
+body {
+  font-family: 'Cormorant Garamond', serif;
+  background-color: #f6f2ee;
+  color: #3a3a3a;
+  line-height: 1.8;
+}
+
+/* ===== Cabeçalho ===== */
+.site-header {
+  background-color: #e9dfd6;
+  padding: 20px 0;
+  border-bottom: 1px solid #d6c8bc;
+}
+
+.nav-container {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.site-nav a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: #5a4a42;
+  font-weight: 600;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Conteúdo ===== */
+main {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.section h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 18px;
+  color: #5a5a5a;
+}
+
+/* ===== Artigos ===== */
+.article-item {
+  background-color: #ffffff;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.article-item h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
