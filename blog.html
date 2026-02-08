@@ -1,18 +1,252 @@
-<h1>Blog</h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórias — Seu Site</title>
 
-<div class="post">
-  <h2>🌙 O site nasceu</h2>
-  <p class="data">08 de fevereiro</p>
-  <p>
-    Hoje esse espaço finalmente existe. Entre bugs, risadas e cansaço,
-    ele saiu do papel e virou lugar.
-  </p>
-</div>
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
-<div class="post">
-  <h2>Sobre escrever</h2>
-  <p class="data">Em construção</p>
-  <p>
-    Escrever é um jeito de respirar mais fundo.
-  </p>
-</div>
+    <style>
+        :root {
+            --azul-claro: #e8f2ff;
+            --azul-pastel: #cfdff5;
+            --dourado: #d8b36a;
+            --dourado-suave: #ead9b3;
+            --texto-escuro: #2f2f2f;
+            --branco: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, var(--azul-claro), var(--branco));
+            color: var(--texto-escuro);
+            min-height: 100vh;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background: var(--branco);
+            border-bottom: 2px solid var(--dourado-suave);
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--dourado);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: 500;
+            color: var(--texto-escuro);
+            position: relative;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--dourado);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after,
+        nav a.active::after {
+            width: 100%;
+        }
+
+        /* ===== MAIN ===== */
+        main {
+            padding: 80px 40px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .titulo {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .titulo h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--dourado);
+            margin-bottom: 15px;
+        }
+
+        .titulo p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 1.05rem;
+            color: #555;
+        }
+
+        .historias-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 35px;
+        }
+
+        .historia-card {
+            background: var(--branco);
+            border-radius: 18px;
+            padding: 35px;
+            border: 1px solid var(--dourado-suave);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease;
+        }
+
+        .historia-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .historia-card h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--dourado);
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+
+        .tag {
+            display: inline-block;
+            background: var(--azul-pastel);
+            color: #444;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 15px;
+        }
+
+        .historia-card p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .ler-mais {
+            text-decoration: none;
+            font-weight: 500;
+            color: var(--dourado);
+            position: relative;
+        }
+
+        .ler-mais::after {
+            content: "→";
+            margin-left: 8px;
+            transition: margin-left 0.3s ease;
+        }
+
+        .ler-mais:hover::after {
+            margin-left: 14px;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--azul-pastel);
+            text-align: center;
+            padding: 30px;
+            margin-top: 90px;
+            font-size: 0.9rem;
+        }
+
+        footer span {
+            color: var(--dourado);
+            font-weight: 500;
+        }
+
+        /* ===== RESPONSIVO ===== */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Seu Site</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="historias.html" class="active">Histórias</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="titulo">
+            <h2>Histórias</h2>
+            <p>
+                Mundos, personagens e sentimentos que nasceram para existir
+                além do silêncio. Escolha uma e entre com cuidado.
+            </p>
+        </section>
+
+        <section class="historias-grid">
+
+            <div class="historia-card">
+                <h3>Nome da História</h3>
+                <span class="tag">Fantasia · Mistério</span>
+                <p>
+                    Uma breve sinopse que instigue, sem revelar demais,
+                    convidando o leitor a atravessar a primeira página.
+                </p>
+                <a href="#" class="ler-mais">Ler história</a>
+            </div>
+
+            <div class="historia-card">
+                <h3>Outra História</h3>
+                <span class="tag">Drama · Romance</span>
+                <p>
+                    Fragmentos de sentimentos, encontros e silêncios
+                    que dizem mais do que palavras diretas.
+                </p>
+                <a href="#" class="ler-mais">Ler história</a>
+            </div>
+
+            <div class="historia-card">
+                <h3>Terceira História</h3>
+                <span class="tag">Suspense · Sobrenatural</span>
+                <p>
+                    Algo observa, algo espera — e nada é exatamente
+                    o que parece ser.
+                </p>
+                <a href="#" class="ler-mais">Ler história</a>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 — Feito com cuidado por <span>você</span>.</p>
+    </footer>
+
+</body>
+</html>
