@@ -7,6 +7,18 @@ body {
   line-height: 1.8;
   font-size: 20px;
   text-align: center;
+
+  <nav class="menu">
+  <hr>
+  <div class="menu-links">
+    <a href="historia.html">História</a>
+    <a href="blog.html">Blog</a>
+    <a href="poesias.html">Poesias</a>
+    <a href="sobre.html">Sobre</a>
+  </div>
+  <hr>
+</nav>
+
 }
 
 h1 {
