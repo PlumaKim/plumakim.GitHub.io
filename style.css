@@ -56,3 +56,148 @@ p {
   padding: 0 10px;
 }
 
+.menu {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.menu hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.4);
+  width: 70%;
+  margin: 10px auto;
+}
+
+.menu-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.menu-links a {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2em;
+  color: #f5f5f5;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.menu-links a:hover {
+  color: #ff9ff3;
+}
+.menu {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.menu hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.4);
+  width: 70%;
+  margin: 10px auto;
+}
+
+.menu-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.menu-links a {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2em;
+  color: #f5f5f5;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.menu-links a:hover {
+  color: #ff9ff3;
+}
+.menu {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.menu hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.4);
+  width: 70%;
+  margin: 10px auto;
+}
+
+.menu-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.menu-links a {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2em;
+  color: #f5f5f5;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.menu-links a:hover {
+  color: #ff9ff3;
+}
+.menu {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.menu hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.4);
+  width: 70%;
+  margin: 10px auto;
+}
+
+.menu-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.menu-links a {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2em;
+  color: #f5f5f5;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.menu-links a:hover {
+  color: #ff9ff3;
+}
+.menu {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.menu hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.4);
+  width: 70%;
+  margin: 10px auto;
+}
+
+.menu-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.menu-links a {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2em;
+  color: #f5f5f5;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.menu-links a:hover {
+  color: #ff9ff3;
+}
