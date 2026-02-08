@@ -1,81 +1,44 @@
-/* ===== Reset básico ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* ===== Corpo ===== */
 body {
+  margin: 0;
+  padding: 60px 20px;
   font-family: 'Cormorant Garamond', serif;
-  background-color: #d0ebff;/*azul clarinho*/
-  color: #3b3b3b;
+  background: #e6f0ff;
+  color: #2f2f2f;
   line-height: 1.8;
+  font-size: 20px;
+  text-align: center;
 }
 
-/* ===== Cabeçalho ===== */
-.site-header {
-  background-color: #e9dfd6;
-  padding: 20px 0;
-  border-bottom: 1px solid #d6c8bc;
-}
-
-.nav-container {
-  max-width: 900px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.brand {
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.site-nav a {
-  margin-left: 16px;
-  text-decoration: none;
-  color: #5a4a42;
-  font-weight: 600;
-}
-
-.site-nav a:hover {
-  text-decoration: underline;
-}
-
-/* ===== Conteúdo ===== */
-main {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 0 20px;
-}
-
-.section {
-  margin-bottom: 60px;
-}
-
-.section h1 {
-  font-size: 40px;
+h1 {
+  font-size: 3rem;
   margin-bottom: 20px;
 }
 
-.section p {
-  font-size: 18px;
-  color: #5a5a5a;
+p {
+  max-width: 720px;
+  margin: 0 auto 30px auto;
+  font-size: 1.2rem;
 }
 
-/* ===== Artigos ===== */
-.article-item {
-  background-color: #ffffff;
-  padding: 30px;
-  margin-bottom: 30px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+.footer {
+  margin-top: 60px;
+  font-size: 0.9rem;
 }
 
-.article-item h2 {
-  font-size: 26px;
-  margin-bottom: 10px;
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 50px;
+  font-size: 1.1rem;
 }
 
+.menu a {
+  text-decoration: none;
+  color: #5a7dbb;
+  font-weight: 600;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
