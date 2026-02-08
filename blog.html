@@ -1,43 +1,111 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>PlumaKim | Blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <!-- Fonte -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+/* CORES BASE */
+:root {
+  --fundo: #f6f8fb;
+  --azul-claro: #dbeafe;
+  --azul-texto: #2c3e50;
+  --linha: #c7d2e0;
+  --destaque: #7aa2d6;
+}
 
-  <!-- CSS global -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+/* BODY */
+body {
+  font-family: 'Cormorant Garamond', serif;
+  background-color: var(--fundo);
+  color: var(--azul-texto);
+  line-height: 1.7;
+}
 
-<nav class="menu">
-  <a href="index.html">Início</a>
-  <a href="historias.html">Histórias</a>
-  <a href="poesias.html">Poesias</a>
-  <a href="blog.html">Blog</a>
-  <a href="sobre.html">Sobre</a>
-</nav>
+/* ===== MENU ===== */
+.menu {
+  text-align: center;
+  padding: 30px 0 20px;
+}
 
-<h1>Blog</h1>
+.menu nav a {
+  margin: 0 16px;
+  text-decoration: none;
+  color: var(--azul-texto);
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+}
 
-<p>
-Este é um espaço para novidades, pensamentos soltos, processos de escrita
-e pequenas atualizações. Um registro do caminho, sem pressa.
-</p>
+.menu nav a:hover {
+  color: var(--destaque);
+}
 
-<div class="post">
-  <h2>🌙 Primeira entrada</h2>
-  <p class="data">Publicado em 08/02/2026</p>
-  <p>
-    Hoje o site nasceu. Entre bugs, risadas e muito cansaço,
-    esse espaço finalmente existe. Que ele cresça com calma.
-  </p>
-</div>
+/* ===== DIVISÓRIA ===== */
+.linha-menu {
+  width: 75%;
+  height: 1px;
+  background-color: var(--linha);
+  margin: 10px auto 50px;
+}
 
-</body>
-</html>
+/* ===== CONTEÚDO ===== */
+.conteudo {
+  max-width: 700px;
+  margin: auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* TÍTULOS */
+.conteudo h1 {
+  font-size: 2.6em;
+  margin-bottom: 25px;
+}
+
+.conteudo h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+/* TEXTO */
+.conteudo p {
+  font-size: 1.15em;
+  margin-bottom: 20px;
+}
+
+/* ===== BLOG ===== */
+.post {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 50px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.post h2 {
+  margin-bottom: 8px;
+}
+
+.post .data {
+  font-size: 0.9em;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+/* ===== POESIAS ===== */
+.poesia {
+  background-color: var(--azul-claro);
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  margin: 80px 0 30px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #6b7280;
+}
