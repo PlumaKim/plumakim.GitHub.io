@@ -1,18 +1,190 @@
-<h1>Blog</h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre — Seu Site</title>
 
-<div class="post">
-  <h2>🌙 O site nasceu</h2>
-  <p class="data">08 de fevereiro</p>
-  <p>
-    Hoje esse espaço finalmente existe. Entre bugs, risadas e cansaço,
-    ele saiu do papel e virou lugar.
-  </p>
-</div>
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
-<div class="post">
-  <h2>Sobre escrever</h2>
-  <p class="data">Em construção</p>
-  <p>
-    Escrever é um jeito de respirar mais fundo.
-  </p>
-</div>
+    <style>
+        :root {
+            --azul-claro: #e8f2ff;
+            --azul-pastel: #cfdff5;
+            --dourado: #d8b36a;
+            --dourado-suave: #ead9b3;
+            --texto-escuro: #2f2f2f;
+            --branco: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, var(--azul-claro), var(--branco));
+            color: var(--texto-escuro);
+            min-height: 100vh;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background: var(--branco);
+            border-bottom: 2px solid var(--dourado-suave);
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--dourado);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: 500;
+            color: var(--texto-escuro);
+            position: relative;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--dourado);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after,
+        nav a.active::after {
+            width: 100%;
+        }
+
+        /* ===== MAIN ===== */
+        main {
+            padding: 80px 40px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .sobre-container {
+            background: var(--branco);
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.06);
+            border: 1px solid var(--dourado-suave);
+        }
+
+        .sobre-container h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.3rem;
+            color: var(--dourado);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .sobre-container p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        .destaque {
+            color: var(--dourado);
+            font-weight: 500;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--azul-pastel);
+            text-align: center;
+            padding: 30px;
+            margin-top: 80px;
+            font-size: 0.9rem;
+        }
+
+        footer span {
+            color: var(--dourado);
+            font-weight: 500;
+        }
+
+        /* ===== RESPONSIVO ===== */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .sobre-container {
+                padding: 35px 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Seu Site</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html" class="active">Sobre</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="sobre-container">
+            <h2>Sobre</h2>
+
+            <p>
+                Este espaço nasceu do desejo de criar algo que fosse
+                <span class="destaque">calmo, honesto e sensível</span>.
+                Um lugar onde palavras, ideias e projetos possam existir
+                sem pressa e sem ruído.
+            </p>
+
+            <p>
+                Aqui, cada detalhe foi pensado com cuidado — das cores suaves
+                aos espaços em branco — para que o site não apenas informe,
+                mas também <span class="destaque">acolha</span>.
+            </p>
+
+            <p>
+                Este não é apenas um site.  
+                É um reflexo de processos, histórias, criação e identidade.
+                Um convite para olhar com mais atenção e sentir com mais verdade.
+            </p>
+
+            <p>
+                Se você chegou até aqui, sinta-se em casa.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 — Feito com cuidado por <span>você</span>.</p>
+    </footer>
+
+</body>
+</html>
